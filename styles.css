@@ -1,0 +1,445 @@
+body {
+  background-color: ghostwhite;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 10px 35px 0 35px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+}
+span {
+  padding: 2px;
+}
+.container_images {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+  box-sizing: border-box;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+  position: relative;
+}
+.container_images > div {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border-color: black;
+  box-shadow: 1px;
+}
+
+.i1 {
+  background-image: url("./images/pizza_imae.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.i2 {
+  background-image: url("./images/fry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.i3 {
+  background-image: url("./images/paneer-tikka.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.i4 {
+  background-image: url("./images/macoaroni.jpeg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.i5 {
+  background-image: url("./images/doughnut.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.images-col-2 {
+  grid-column: span 2;
+}
+.images-row-2 {
+  grid-row: span 2;
+}
+
+.container_images_data {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: normal;
+  column-gap: 0;
+  row-gap: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+}
+h5 {
+  padding: 0 10px 0 10px;
+}
+p {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0 10px 0 10px;
+  font-size: 12px;
+}
+.r1 {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: rgb(134, 47, 221);
+}
+.r2 {
+  background-color: rgba(241, 186, 223, 0.75);
+  color: green;
+}
+.r3 {
+  background-color: rgba(228, 166, 207, 0.75);
+  color: green;
+}
+
+.r4 {
+  background-color: rgba(194, 214, 144, 0.75);
+  color: black;
+}
+.r5 {
+  background-color: rgba(194, 214, 144, 0.75);
+  color: black;
+}
+.container_images_data_review_button {
+  background-color: inherit;
+  border-radius: 8px;
+  border-color: white;
+  font-size: 12px;
+
+  cursor: pointer;
+  width: 100px;
+  height: 24px;
+}
+.b1 {
+  color: rgba(88, 46, 74, 0.75);
+}
+.b2 {
+  background-color: none;
+  color: green;
+}
+.b3 {
+  background-color: none;
+  color: green;
+}
+.b4 {
+  background-color: none;
+}
+.b5 {
+  background-color: none;
+}
+.container_images_data_review {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+
+  padding: 0 10px 0 10px;
+}
+
+.container {
+  margin: 25px;
+}
+.cuisine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 25px;
+  font-size: 10px;
+}
+
+.cuisine_type {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  padding: 30px;
+}
+
+.container_heading {
+  font-family: poppin;
+}
+.background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 35px;
+  font-size: 10px;
+  background-image: url("./images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.chef_detaies {
+  margin: 30px;
+  margin-bottom: 220px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.chef_detaies > img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border-color: black;
+}
+.card {
+  background-color: white;
+  width: 170px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 0 20px 20px 20px;
+  color: black;
+}
+.food_guide {
+  background-image: url("./images/acqua.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -200px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 25px;
+}
+center {
+  font-kerning: none;
+  padding-top: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.food_chart {
+  position: relative;
+  height: 500px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.food_detail {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  column-gap: 2px;
+  font-size: 10px;
+  width: 250px;
+  height: 150px;
+  align-items: center;
+}
+.food_detail > img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  padding: 0;
+}
+
+.food_detail > h5 {
+  padding: 0;
+  font-weight: 50px;
+}
+.c1 {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+.c2 {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+}
+.c3 {
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+}
+.c4 {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+}
+.food_chart_main {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.food_chart_main_centre {
+  position: absolute;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  align-items: center;
+}
+.food_chart_main_top_right {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 6px;
+  right: 20px;
+}
+.food_chart_main_bottom_left {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 6px;
+  left: 20px;
+}
+
+.extra_div {
+  width: auto;
+  height: 500px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: ghostwhite;
+}
+
+.extra_div {
+  width: auto;
+  height: 500px;
+}
+@media screen and (max-width: 1024px) {
+  .container_images {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+  .container_images_data {
+    display: block;
+  }
+  .cuisine {
+    display: block;
+  }
+  .c1 {
+    top: 2px;
+    left: 4px;
+  }
+  .c2 {
+    bottom: 30px;
+    right: 4px;
+  }
+  .c3 {
+    bottom: 30px;
+    left: 4px;
+  }
+  .c4 {
+    top: 2px;
+    right: 4px;
+  }
+  .food_chart {
+    margin: 0;
+  }
+  .food_chart_main {
+    width: 250px;
+    height: 250px;
+  }
+  .food_chart_main_centre {
+    width: 150px;
+    height: 150px;
+  }
+  .food_chart_main_top_right {
+    top: 40px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .food_chart_main_bottom_left {
+    bottom: 40px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .food_detail {
+    margin: 0px;
+
+    font-size: 10px;
+    width: 250px;
+    height: 100px;
+  }
+  .cuisine_type {
+    padding: 3px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    cursor: pointer;
+  }
+  .chef_detaies {
+    margin: 10px 0 220px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chef_detaies > img {
+    height: 50px;
+    width: 50px;
+  }
+  .card {
+    background-color: white;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    padding: 0;
+    color: black;
+  }
+  .food_detail {
+    margin: 0px;
+    justify-content: unset;
+    column-gap: 0;
+    font-size: 0;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+  }
+  .food_detail > p {
+    visibility: hidden;
+  }
+  .food_detail > h5 {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    font-size: xx-small;
+    font-weight: 50px;
+  }
+  .c1 {
+    top: 20px;
+    left: 4px;
+  }
+  .c2 {
+    bottom: 80px;
+    right: 4px;
+  }
+  .c3 {
+    bottom: 80px;
+    left: 4px;
+  }
+  .c4 {
+    top: 20px;
+    right: 4px;
+  }
+}
