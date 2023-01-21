@@ -85,7 +85,7 @@ span {
   height: auto;
   position: absolute;
   bottom: 0;
-  padding: 0;
+  padding: 0 0 5px 0;
 }
 h5 {
   padding: 0 10px 0 10px;
