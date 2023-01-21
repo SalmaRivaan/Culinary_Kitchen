@@ -158,18 +158,23 @@ p {
 }
 .cuisine {
   display: flex;
+
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-evenly;
   margin: 25px;
-  font-size: 10px;
 }
 
 .cuisine_type {
   display: flex;
   flex-direction: column;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: center;
   padding: 30px;
+}
+.cuisine_type > p {
+  padding: 0;
+  font-size: 12px;
 }
 
 .container_heading {
