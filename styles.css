@@ -289,8 +289,8 @@ center {
 }
 .food_chart_main {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,23 +298,23 @@ center {
 .food_chart_main_centre {
   position: absolute;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 175px;
+  height: 175px;
   position: absolute;
   align-items: center;
 }
 .food_chart_main_top_right {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 6px;
   right: 20px;
 }
 .food_chart_main_bottom_left {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: 6px;
   left: 20px;
@@ -352,11 +352,11 @@ center {
     left: 4px;
   }
   .c2 {
-    bottom: 30px;
+    bottom: 40px;
     right: 4px;
   }
   .c3 {
-    bottom: 30px;
+    bottom: 40px;
     left: 4px;
   }
   .c4 {
